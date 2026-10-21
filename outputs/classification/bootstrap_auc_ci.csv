@@ -1,0 +1,5 @@
+model,Test_ROC_AUC,Bootstrap_95CI_low,Bootstrap_95CI_high
+LogReg,0.9864,0.9619,1.0
+KNN,0.9952,0.986,1.0
+SVM,0.996,0.9855,1.0
+RandomForest,0.9944,0.9851,1.0

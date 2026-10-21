@@ -1,0 +1,7 @@
+comparison,A_right_B_wrong,A_wrong_B_right,chi2,p_value,method,p_bonferroni
+LogReg vs KNN,5,2,,0.4531,exact binomial,1.0
+LogReg vs SVM,1,2,,1.0,exact binomial,1.0
+LogReg vs RandomForest,2,2,,1.0,exact binomial,1.0
+KNN vs SVM,0,4,,0.125,exact binomial,0.75
+KNN vs RandomForest,0,3,,0.25,exact binomial,1.0
+SVM vs RandomForest,2,1,,1.0,exact binomial,1.0

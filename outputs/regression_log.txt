@@ -1,0 +1,32 @@
+Train: (353, 10), Test: (89, 10)
+PLS           best params: {'plsregression__n_components': 3}
+SVR           best params: {'svr__C': 50, 'svr__epsilon': 20}
+RandomForest  best params: {'max_features': 0.5, 'min_samples_leaf': 10}
+
+=== Individual model metrics ===
+              CV_RMSE_mean  CV_RMSE_sd  CV_R2_mean  Test_RMSE  Test_MAE  Test_R2  Test_Adj_R2     SDR  SDR_pct  OOB_RMSE
+model                                                                                                                   
+Linear              54.988       5.583       0.474     53.853    42.794    0.453        0.382  19.185   26.209       NaN
+PLS                 54.942       5.586       0.475     53.481    42.875    0.460        0.391  19.583   26.753       NaN
+SVR                 57.580       6.042       0.424     51.054    39.857    0.508        0.445  22.078   30.161       NaN
+RandomForest        57.073       5.858       0.435     51.923    41.974    0.491        0.426  20.985   28.668    57.018
+
+=== Paired t-tests on resampled RMSE differences (99.2% Bonferroni CIs) ===
+           comparison  mean_diff  sd_diff  t_stat  p_value  p_bonferroni  CI_99.2%_low  CI_99.2%_high  significant
+         Linear - PLS     0.0461   0.8486  0.3842   0.7025        1.0000       -0.2839         0.3761        False
+         Linear - SVR    -2.5920   2.9602 -6.1916   0.0000        0.0000       -3.7431        -1.4409         True
+Linear - RandomForest    -2.0854   3.0182 -4.8857   0.0000        0.0001       -3.2591        -0.9118         True
+            PLS - SVR    -2.6381   2.9954 -6.2276   0.0000        0.0000       -3.8029        -1.4733         True
+   PLS - RandomForest    -2.1315   2.9542 -5.1020   0.0000        0.0000       -3.2803        -0.9828         True
+   SVR - RandomForest     0.5066   3.3675  1.0637   0.2927        1.0000       -0.8029         1.8160        False
+
+=== Paired t-tests on resampled R^2 differences ===
+           comparison  mean_diff  sd_diff  t_stat  p_value  p_bonferroni  CI_99.2%_low  CI_99.2%_high  significant
+         Linear - PLS    -0.0007   0.0167 -0.3037   0.7627        1.0000       -0.0072         0.0058        False
+         Linear - SVR     0.0503   0.0627  5.6778   0.0000        0.0000        0.0260         0.0747         True
+Linear - RandomForest     0.0394   0.0565  4.9369   0.0000        0.0001        0.0175         0.0614         True
+            PLS - SVR     0.0510   0.0620  5.8238   0.0000        0.0000        0.0269         0.0751         True
+   PLS - RandomForest     0.0401   0.0548  5.1819   0.0000        0.0000        0.0188         0.0615         True
+   SVR - RandomForest    -0.0109   0.0693 -1.1121   0.2715        1.0000       -0.0378         0.0160        False
+
+All regression outputs saved to /home/adogra/medical_ml_project/outputs/regression

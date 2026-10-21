@@ -1,0 +1,7 @@
+comparison,mean_diff,sd_diff,t_stat,p_value,p_bonferroni,CI_99.2%_low,CI_99.2%_high,significant
+Linear - PLS,0.0461,0.8486,0.3842,0.7025,1.0,-0.2839,0.3761,False
+Linear - SVR,-2.592,2.9602,-6.1916,0.0,0.0,-3.7431,-1.4409,True
+Linear - RandomForest,-2.0854,3.0182,-4.8857,0.0,0.0001,-3.2591,-0.9118,True
+PLS - SVR,-2.6381,2.9954,-6.2276,0.0,0.0,-3.8029,-1.4733,True
+PLS - RandomForest,-2.1315,2.9542,-5.102,0.0,0.0,-3.2803,-0.9828,True
+SVR - RandomForest,0.5066,3.3675,1.0637,0.2927,1.0,-0.8029,1.816,False

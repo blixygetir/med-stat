@@ -1,0 +1,7 @@
+comparison,AUC_A,AUC_B,z,p_value,p_bonferroni
+LogReg vs KNN,0.9864,0.9952,-0.856,0.392,1.0
+LogReg vs SVM,0.9864,0.996,-0.9759,0.3291,1.0
+LogReg vs RandomForest,0.9864,0.9944,-0.7679,0.4426,1.0
+KNN vs SVM,0.9952,0.996,-0.2262,0.821,1.0
+KNN vs RandomForest,0.9952,0.9944,0.2353,0.814,1.0
+SVM vs RandomForest,0.996,0.9944,0.4573,0.6475,1.0

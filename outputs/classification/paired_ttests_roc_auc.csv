@@ -1,0 +1,7 @@
+comparison,mean_diff,sd_diff,t_stat,p_value,p_bonferroni,CI_99.2%_low,CI_99.2%_high,significant
+LogReg - KNN,0.00311,0.0093,2.36779,0.02189,0.13131,-0.0005,0.00673,False
+LogReg - SVM,-0.0021,0.00514,-2.88882,0.00574,0.03446,-0.0041,-0.0001,True
+LogReg - RandomForest,0.00326,0.01094,2.10887,0.04009,0.24054,-0.00099,0.00752,False
+KNN - SVM,-0.00521,0.00747,-4.93594,1e-05,6e-05,-0.00812,-0.00231,True
+KNN - RandomForest,0.00015,0.01057,0.0998,0.92091,1.0,-0.00396,0.00426,False
+SVM - RandomForest,0.00536,0.01059,3.58036,0.00079,0.00472,0.00124,0.00948,True
